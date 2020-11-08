@@ -1,17 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react"; // 이 코드가 있어야 리액트가 JSX를 이해할 수 있다.
+import ReactDOM from "react-dom";
+import App from "./App";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<App />, document.getElementById("root")); // App 컴포넌트가 id가 root인 엘리먼트에 그려진다.
+// 리액트는 <App />과 같은 표시를 컴포넌트로 인식함
